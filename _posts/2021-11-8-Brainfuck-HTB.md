@@ -5,9 +5,12 @@ slug: brainfuck-hackthebox
 date: '2021-11-08T13:41.350Z'
 ---
 
-| Name      	| OS    	|
-|-----------	|-------	|
-| Brainfuck 	| Linux 	|
+![logo]({{ site.baseurl }}/images/brainfuck/logo.jpg)
+
+# Info
+Name: Brainfuck
+
+OS: Linux
 
 # Recon
 Starting a port scan with nmap:
