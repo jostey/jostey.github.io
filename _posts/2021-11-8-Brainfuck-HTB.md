@@ -19,6 +19,12 @@ nmap -p- -sS -min-rate 5000 --open -vvv -n -Pn 10.10.10.17 -oN nmap/initial
 {% endhighlight  %}
 ![nmap-lame]({{ site.baseurl }}/images/brainfuck/1.jpg)
 
+We can scan with nmap scripts for version and vulnerabilities associated with the ports mentioned above: 
+
+{% highlight shell %}
+sudo nmap -p22,25,110,143,443 -sCV 10.10.10.17 -oG nmap/targeted
+{% endhighlight %}
+
 * Port 22 -- OpenSSH 7.2p2 -- Username Enumeration
 * Port 25 -- Postfix smtpd
 * Port 110 -- Dovecot pop3d
