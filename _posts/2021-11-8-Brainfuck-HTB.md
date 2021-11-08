@@ -44,3 +44,16 @@ In the sup3rs3cr3t.brainfuck.htb URL we can see a forum where only they can writ
 ## User Enumeration
 We have got a 2 possible users: admin and orestis.
 ![user]({{ site.baseurl }}/images/brainfuck/4.jpg)
+
+# WordPress Vulns
+It is a good idea to research vulnerabilities in WordPress. We can use wpscan (without TLS Checks):
+{% highlight shell %}
+wpscan --url https://brainfuck.htb --disable-tls-checks
+{% endhighlight %}
+
+![wpscan]({{ site.baseurl }}/images/brainfuck/wpscan.jpg)
+
+This command return a lot of information about the page, but it is a good point to look for plugins with vulnerabilities, because they are the typical way to attack these systems. Searchsploit returns valuable data:
+
+![searchsploit]({{ site.baseurl }}/images/brainfuck/searchsploit.jpg)
+
