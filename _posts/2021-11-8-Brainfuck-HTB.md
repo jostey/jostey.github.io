@@ -53,7 +53,11 @@ wpscan --url https://brainfuck.htb --disable-tls-checks
 
 ![wpscan]({{ site.baseurl }}/images/brainfuck/wpscan.jpg)
 
-This command return a lot of information about the page, but it is a good point to look for plugins with vulnerabilities, because they are the typical way to attack these systems. Searchsploit returns valuable data:
+This command return a lot of information about the page, but it is important to look for plugins with vulnerabilities, because they are the typical way to attack these systems. Searchsploit returns valuable data:
 
 ![searchsploit]({{ site.baseurl }}/images/brainfuck/searchsploit.jpg)
 
+If we read the PoC of Privilege Escalation, we can see a HTML with a POST call to a domain.abc/wp-admin/admin-ajax.php . We should edit the value of username with a valid user. As we had an admin user we tried with him.
+
+![exploit]({{ site.baseurl }}/images/brainfuck/exploit.jpg)
+![admin]({{ site.baseurl }}/images/brainfuck/admin.jpg)
