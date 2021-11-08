@@ -57,7 +57,7 @@ This command return a lot of information about the page, but it is important to 
 
 ![searchsploit]({{ site.baseurl }}/images/brainfuck/searchsploit.jpg)
 
-If we read the PoC of Privilege Escalation, we can see a HTML with a POST call to a domain.abc/wp-admin/admin-ajax.php . We should edit the value of username with a valid user. As we had an admin user we tried with him.
+If we read the PoC of Privilege Escalation (41006 in searchsploit), we can see a HTML with a POST call to a domain.abc/wp-admin/admin-ajax.php . We should edit the value of username with a valid user. As we had an admin user we tried with him.
 
 ![exploit]({{ site.baseurl }}/images/brainfuck/exploit.jpg)
 ![admin]({{ site.baseurl }}/images/brainfuck/admin.jpg)
@@ -65,3 +65,12 @@ If we read the PoC of Privilege Escalation, we can see a HTML with a POST call t
 ## Clue SMTP
 We found a clue in the WordPress posts. We must look for more information in the SMTP service.
 ![clue-smtp]({{ site.baseurl }}/images/brainfuck/clue-smtp.jpg)
+
+## WordPress Reverse Shell 404 Template
+We can attack this machine with a reverse shell in PHP into the 404 error template. We can login into dashboard and edit the template. At first glance we will not see the template but it inherits from another theme (Specia).
+
+We must edit the IP and port (if you want) with the php-reverse-shell (pentestmonkey): http://pentestmonkey.net/tools/web-shells/php-reverse-shell
+![404-template]({{ site.baseurl }}/images/brainfuck/404-template.jpg)
+
+Wrong way! "You need to make this file writable before you can save your changes."
+
