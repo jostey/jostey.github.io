@@ -61,3 +61,7 @@ If we read the PoC of Privilege Escalation, we can see a HTML with a POST call t
 
 ![exploit]({{ site.baseurl }}/images/brainfuck/exploit.jpg)
 ![admin]({{ site.baseurl }}/images/brainfuck/admin.jpg)
+
+## Clue SMTP
+We found a clue in the WordPress posts. We must look for more information in the SMTP service.
+![clue-smtp]({{ site.baseurl }}/images/brainfuck/clue-smtp.jpg)
