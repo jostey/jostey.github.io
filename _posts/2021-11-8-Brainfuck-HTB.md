@@ -29,4 +29,5 @@ nmap -p- -sS -min-rate 5000 --open -vvv -n -Pn 10.10.10.17 -oN nmap/initial
 We can see into ssl-cert of the server Nginx that brainfuck.htb and sup3rs3cr3t.brainfuck.htb are a valid hostnames, so we will add them in /etc/hosts.
 
 ![nmap-lame-2]({{ site.baseurl }}/images/brainfuck/2.jpg)
+![vir-dom]({{ site.baseurl }}/images/brainfuck/3.jpg)
 
