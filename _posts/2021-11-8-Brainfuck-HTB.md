@@ -32,7 +32,7 @@ We can see into ssl-cert of the server Nginx that brainfuck.htb and sup3rs3cr3t.
 ![vir-dom]({{ site.baseurl }}/images/brainfuck/3.jpg)
 
 Next, we can browse to the URL https://brainfuck.htb. It is a Wordpress site according the description of the website.
-In the sup3rs3cr3t URL we can see a forum where only they can write: admin and orestis.
+In the sup3rs3cr3t.brainfuck.htb URL we can see a forum where only they can write: admin and orestis.
 
 
 ## User Enumeration
