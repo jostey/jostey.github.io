@@ -115,9 +115,9 @@ The cypher is Vigenere and it uses a cipher based on a key that spans the length
 
 ![key]({{ site.baseurl }}/images/brainfuck/fuckmybrain.jpg)
 
-With a key to decrypt a string we could decrypt a possible ssh key URL. It is correct!
+With a key to decrypt a string we could decrypt a possible ssh key URL. That's right!
 
-![key]({{ site.baseurl }}/images/brainfuck/vigenere.jpg)
+![vigenere]({{ site.baseurl }}/images/brainfuck/vigenere.jpg)
 
 
 
