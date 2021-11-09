@@ -74,3 +74,8 @@ We must edit the IP and port (if you want) with the php-reverse-shell (pentestmo
 
 Wrong way! "You need to make this file writable before you can save your changes."
 
+# SMTP - Port 25
+We can see the credentials of the user oretis in a plugin of WordPress called Easy WP SMTP:
+orestis -- kHGuERB29DNiNE
+![smtp-credential]({{ site.baseurl }}/images/brainfuck/smtp-credential.jpg)
+
