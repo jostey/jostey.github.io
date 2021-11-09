@@ -74,8 +74,27 @@ We must edit the IP and port (if you want) with the php-reverse-shell (pentestmo
 
 Wrong way! "You need to make this file writable before you can save your changes."
 
-# SMTP - Port 25
+# SMTP and POP3 - Port 25 and Port 1110
 We can see the credentials of the user oretis in a plugin of WordPress called Easy WP SMTP:
+
 orestis -- kHGuERB29DNiNE
+
 ![smtp-credential]({{ site.baseurl }}/images/brainfuck/smtp-credential.jpg)
+
+In SMTP service we cannot login because it is disabled. Instead, we can try logging in on port 110 (POP3) with the same credentials:
+{% highlight shell %}
+telnet 10.10.10.17 110
+user orestis
+pass kHGuERB29DNiNE
+list
+retr 1
+retr 2
+{% endhighlight %}
+
+![pop3-1]({{ site.baseurl }}/images/brainfuck/pop3-1.jpg)
+![pop3-1.1]({{ site.baseurl }}/images/brainfuck/pop3-1.1.jpg)
+![pop3-2]({{ site.baseurl }}/images/brainfuck/pop3-2.jpg)
+
+
+
 
