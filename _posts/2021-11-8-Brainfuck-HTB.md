@@ -119,7 +119,9 @@ With a key to decrypt a string we could decrypt a possible ssh key URL. That's r
 
 ![vigenere]({{ site.baseurl }}/images/brainfuck/vigenere.jpg)
 
+## Crack id_rsa (ssh2john)
+Next, we have a id_rsa but there is a passphrase that we do not know. We can break the passphrase with John The Ripper and ssh2john (because the tool needs it in that format to work correctly.
 
-
+![ssh2john]({{ site.baseurl }}/images/brainfuck/ssh2john.jpg)
 
 
