@@ -96,5 +96,25 @@ retr 2
 ![pop3-2]({{ site.baseurl }}/images/brainfuck/pop3-2.jpg)
 
 # Login into Sup3rs3cr3t Forum
+
+orestis -- kIEnnfEKJ#9UmdO
+
+We can see 2 posts interesting. One, where they say about a SSH Key encrypted and other post we can see a URL encrypted. We can see a simple encryption, like Caesar Substitution and we have a sentence encrypted and plain-text (sign of orestis messages):
+
+Wejmvse - Fbtkqal zqb rso rnl cwihsf
+Qbqquzs - Pnhekxs dpi fca fhf zdmgzt
+Orestis - Hacking for fun and profit
+
+First, we need to identify the type of cypher: https://www.boxentriq.com/code-breaking/cipher-identifier
+The cypher is Vigenere and it uses a cipher based on a key that spans the length of the phrase (if it is not large enough). By having a plaintext phrase and an encrypted phrase we can find out the key with which it encrypts because it is possible to do the reverse operation (correctly ordering the characters that come out cyclically repeated because the key is shorter than the phrase to encrypt).
+
+![key]({{ site.baseurl }}/images/brainfuck/fuckmybrain.jpg)
+
+
+
+
+The encryption is not Caesar because a letter has several letters associated with it.
+
+
 ![forum]({{ site.baseurl }}/images/brainfuck/login-forum.jpg)
 
