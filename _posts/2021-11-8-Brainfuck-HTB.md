@@ -110,9 +110,13 @@ Qbqquzs - Pnhekxs dpi fca fhf zdmgzt
 Orestis - Hacking for fun and profit
 
 First, we need to identify the type of cypher: https://www.boxentriq.com/code-breaking/cipher-identifier
+
 The cypher is Vigenere and it uses a cipher based on a key that spans the length of the phrase (if it is not large enough). By having a plaintext phrase and an encrypted phrase we can find out the key with which it encrypts because it is possible to do the reverse operation (correctly ordering the characters that come out cyclically repeated because the key is shorter than the phrase to encrypt).
 
 ![key]({{ site.baseurl }}/images/brainfuck/fuckmybrain.jpg)
+
+With a key to decrypt a string we could decrypt a possible ssh key URL. It is correct!
+
 ![key]({{ site.baseurl }}/images/brainfuck/vigenere.jpg)
 
 
