@@ -103,11 +103,11 @@ orestis -- kIEnnfEKJ#9UmdO
 
 We can see 2 posts interesting. One, where they say about a SSH Key encrypted and other post we can see a URL encrypted. We can see a simple encryption, like Caesar Substitution and we have a sentence encrypted and plain-text (sign of orestis messages):
 
-Wejmvse - Fbtkqal zqb rso rnl cwihsf
+* Wejmvse - Fbtkqal zqb rso rnl cwihsf
 
-Qbqquzs - Pnhekxs dpi fca fhf zdmgzt
+* Qbqquzs - Pnhekxs dpi fca fhf zdmgzt
 
-Orestis - Hacking for fun and profit
+* Orestis - Hacking for fun and profit
 
 First, we need to identify the type of cypher: https://www.boxentriq.com/code-breaking/cipher-identifier
 
