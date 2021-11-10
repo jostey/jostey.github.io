@@ -127,3 +127,7 @@ Next, we have a id_rsa but there is a passphrase that we do not know. We can bre
 ![john]({{ site.baseurl }}/images/brainfuck/john_cracked.jpg)
 
 * Passphrase: 3poulakia!
+
+# User Flag
+With the passphrase it is trivial:
+![user]({{ site.baseurl }}/images/brainfuck/user.jpg)
