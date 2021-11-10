@@ -122,7 +122,16 @@ With a key to decrypt a string we could decrypt a possible ssh key URL. That's r
 ## Crack id_rsa (ssh2john)
 Next, we have a id_rsa but there is a passphrase that we do not know. We can break the passphrase with John The Ripper and ssh2john (because the tool needs it in that format to work correctly). Then, with the list rockyou.txt we will crack the passphrase.
 
+{% highlight shell %}
+wget https://raw.githubusercontent.com/magnumripper/JohnTheRipper/bleeding-jumbo/run/ssh2john.py
+python ssh2john.py id_rsa > id_rsa_hash
+{% endhighlight %}
+
 ![ssh2john]({{ site.baseurl }}/images/brainfuck/ssh2john.jpg)
+
+{% highlight shell %}
+john --wordlist=/usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt id_rsa_hash
+{% endhighlight %}
 
 ![john]({{ site.baseurl }}/images/brainfuck/john_cracked.jpg)
 
