@@ -142,8 +142,10 @@ With the passphrase it is trivial:
 ![user]({{ site.baseurl }}/images/brainfuck/user.jpg)
 
 # Root Flag -- Priv Escalation (lxd/lxc Group)
-With Linpeas.sh we can see a vuln about lxd/lxc Group. We have taken the following guide to scale and get the flag we can do it by searching a file called root.txt (method 2 without connection):
+With Linpeas.sh (shared with 'python3 -m http.server') we can see a vuln about lxd/lxc Group. We have taken the following guide to scale and get the flag we can do it by searching a file called root.txt (method 2 without connection):
 
 https://github.com/carlospolop/hacktricks/blob/master/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation.md#lxdlxc-group---privilege-escalation
+
+![linpeas]({{ site.baseurl }}/images/brainfuck/linpeas.jpg)
 
 ![lxd]({{ site.baseurl }}/images/brainfuck/lxd.jpg)
