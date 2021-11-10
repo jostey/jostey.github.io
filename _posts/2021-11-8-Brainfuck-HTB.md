@@ -146,6 +146,6 @@ With Linpeas.sh (shared with 'python3 -m http.server') we can see a vuln about l
 
 https://github.com/carlospolop/hacktricks/blob/master/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation.md#lxdlxc-group---privilege-escalation
 
-![linpeas]({{ site.baseurl }}/images/brainfuck/linpeas.jpg)
+![linpeas]({{ site.baseurl }}/images/brainfuck/linpeas1.jpg)
 
 ![lxd]({{ site.baseurl }}/images/brainfuck/lxd.jpg)
